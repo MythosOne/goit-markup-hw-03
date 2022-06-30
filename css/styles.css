@@ -1,0 +1,234 @@
+/* Цвет основного текста #212121 */
+
+/* Вторичный цвет текста  #757575 */
+
+/* Белый цвет #FFFFFF */
+
+/* Логотип и Акцент #2196F3 */
+
+/* Вторичный цвет фона #2F303A */
+
+/* Третичный цвет фона #F5F4FA */
+
+:root {
+  --title-text-color: #212121;
+  --prymary-text-color: #757575;
+  --accent-text-color: #2196f3;
+  --secondary-text-color: #ffffff;
+  --prymary-bt-color: #f5f4fa;
+  --background-fone-color: #2f303a;
+  --accent-bt-color: #2196f3;
+  --accent-ptymary-color: #188ce8;
+}
+
+body {
+  background-color: #ffffff;
+  color: #212121;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.02em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Шапка сайта */
+
+.logo {
+  color: var(--title-text-color);
+  font-family: Raleway;
+}
+
+.logo-blue {
+  color: var(--accent-text-color);
+}
+
+.logo-white {
+  color: var(--secondary-text-color);
+}
+
+/* site-nav */
+
+.site-nav .link {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-text-color);
+}
+
+.site-nav .link. .current {
+  color: var(--accent-text-color);
+}
+
+.hcontact-link .link {
+  color: var(--prymary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.hcontact-link > li :hover,
+.hcontact-link > li :focus {
+  color: var(--accent-text-color);
+}
+
+/* index.html */
+
+/* Hero */
+.hero {
+  background-color: var(--background-fone-color);
+  color: var(--secondary-text-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+}
+
+/* Эффективные решения */
+
+.title-solution {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.text {
+  color: var(--prymary-text-color);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* Чем мы занимаемся */
+
+.title-practice {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+/* Наша команда */
+
+.title-team {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.emoyee {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.prof {
+  color: var(--prymary-text-color);
+
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* Подвал */
+
+.footer {
+  background-color: var(--background-fone-color);
+}
+
+.address {
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+}
+
+.map-link {
+  color: var(--secondary-text-color);
+}
+.map-link:hover,
+.map-link:focus {
+  color: var(--accent-text-color);
+}
+
+.fcontact-link .link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.fcontact-link > li :hover,
+.fcontact-link > li :focus {
+  color: var(--accent-text-color);
+}
+
+/* portfolio.html */
+
+.project {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.type-project {
+  color: var(--prymary-text-color);
+
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+/* Button */
+
+.button {
+  background-color: var(--accent-text-color);
+  color: var(--secondary-text-color);
+  cursor: pointer;
+}
+
+.button.prymary {
+  background-color: var(--accent-text-color);
+  color: var(--secondary-text-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.button.prymary:hover,
+.button.prymary:focus {
+  background-color: var(--accent-ptymary-color);
+  color: var(--secondary-text-color);
+}
+
+.button.secondary {
+  background-color: var(--prymary-bt-color);
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  background-color: var(--accent-bt-color);
+  color: var(--secondary-text-color);
+}
