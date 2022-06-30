@@ -38,9 +38,18 @@ a {
 
 /* Шапка сайта */
 
+.page-header {
+  margin-inline-end: auto;
+}
+
 .logo {
   color: var(--title-text-color);
   font-family: Raleway;
+}
+
+.logo-footer {
+  margin-top: 60px;
+  padding-left: 15px;
 }
 
 .logo-blue {
@@ -53,9 +62,37 @@ a {
 
 /* site-nav */
 
-.site-nav .link {
-  color: var(--title-text-color);
+.page-header {
+  display: flex;
+}
 
+/* .main-nav {
+  display: flex;
+  margin: 0;
+  width: 585px;
+  outline: 1px solid red;
+} */
+
+.site-nav {
+  display: flex;
+  margin: 0px;
+  border: 0px;
+}
+
+.site-nav .item {
+  margin-right: 50px;
+}
+
+.site-nav .item:last-child {
+  margin-right: 0;
+}
+
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -68,6 +105,20 @@ a {
 
 .site-nav .link. .current {
   color: var(--accent-text-color);
+}
+
+.hcontact-link {
+  display: flex;
+  margin-left: 15px;
+  margin-right: 0;
+  margin-top: 5px;
+  margin-bottom: 0;
+  width: 385px;
+  outline: 1px solid red;
+}
+
+.hcontact-link .item + .item {
+  margin-left: 50px;
 }
 
 .hcontact-link .link {
@@ -87,6 +138,12 @@ a {
 
 /* Hero */
 .hero {
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 0;
+  width: 1600px;
+  outline: 1px solid red;
+  text-align: center;
   background-color: var(--background-fone-color);
   color: var(--secondary-text-color);
 
@@ -95,58 +152,106 @@ a {
   line-height: 1.36;
 }
 
+.hero-title {
+  margin: 0px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
 /* Эффективные решения */
+
+.section {
+  margin-top: 5px;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  outline: 1px solid red;
+  width: 1200px;
+
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.title-container {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .title-solution {
   color: var(--title-text-color);
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .text {
   color: var(--prymary-text-color);
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 /* Чем мы занимаемся */
 
 .title-practice {
   color: var(--title-text-color);
-
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+}
+
+.title-practice {
+  text-align: center;
+}
+
+.practice-list {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Наша команда */
 
 .title-team {
   color: var(--title-text-color);
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-top: 94px;
+}
+
+.team-list {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .emoyee {
   color: var(--title-text-color);
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  min-width: 109px;
 }
 
 .prof {
   color: var(--prymary-text-color);
-
   font-size: 16px;
   line-height: 1.19;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Подвал */
@@ -167,6 +272,12 @@ a {
 .map-link:hover,
 .map-link:focus {
   color: var(--accent-text-color);
+}
+
+.fcontact-link {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 15px;
 }
 
 .fcontact-link .link {
@@ -204,12 +315,20 @@ a {
 }
 
 .button.prymary {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  text-align: center;
+  border: none;
+  margin: none;
+
   background-color: var(--accent-text-color);
   color: var(--secondary-text-color);
 
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.88;
 }
 
 .button.prymary:hover,
@@ -219,6 +338,12 @@ a {
 }
 
 .button.secondary {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
+  border: none;
+  text-align: center;
   background-color: var(--prymary-bt-color);
   color: var(--title-text-color);
 
