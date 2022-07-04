@@ -29,7 +29,7 @@ body {
 
 .container {
   margin: 0 auto;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -147,7 +147,6 @@ a {
 }
 
 .hero-title {
-  display: block;
   width: 696px;
   margin: 0px;
   padding-top: 200px;
@@ -246,8 +245,8 @@ a {
 
 .title-team {
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 50px;
+  margin: 0;
+  padding-bottom: 50px;
   padding-top: 94px;
 
   color: var(--title-text-color);
