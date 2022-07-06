@@ -43,6 +43,17 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
 /* Шапка сайта */
 
 .link {
@@ -50,10 +61,13 @@ a {
   padding: 0;
 }
 
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
 .page-header .container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -139,29 +153,32 @@ a {
 /* Hero */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
 
   background-color: var(--background-fone-color);
-
-  color: var(--secondary-text-color);
-}
-
-.hero-title {
-  width: 696px;
-  margin: 0px;
-  padding-top: 200px;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+
+.container.hero-title {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Эффективные решения */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .title-container {
   display: flex;
@@ -170,9 +187,9 @@ a {
 }
 
 .item-title {
-  width: 277px;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  width: 270px;
+  /* padding-top: 94px;
+  padding-bottom: 94px; */
   margin-right: 31px;
 }
 
@@ -205,17 +222,20 @@ a {
 
 /* Чем мы занимаемся */
 
+.section-practic {
+  padding-bottom: 94px;
+}
+
 .practice-list {
   display: flex;
   margin: 0;
   padding: 0;
-  padding-bottom: 94px;
 }
 
 .title-practice {
   margin: 0;
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   color: var(--title-text-color);
   font-weight: 700;
@@ -240,14 +260,14 @@ a {
 /* Наша команда */
 
 .work-team {
-  background-color: #f5f4fa;
+  padding-bottom: 94px;
+  background-color: var(--prymary-bt-color);
 }
 
 .title-team {
   text-align: center;
   margin: 0;
-  padding-bottom: 50px;
-  padding-top: 94px;
+  margin-bottom: 50px;
 
   color: var(--title-text-color);
   font-weight: 700;
@@ -262,21 +282,24 @@ a {
   padding: 0;
 }
 
-.team-list .item-team {
+.item-team {
   width: 270px;
   margin-right: 30px;
   justify-content: center;
 }
 
-.item-team:nth-last-child(-n + 3) {
-  margin-bottom: 94px;
+.item-team:nth-child(4) {
+  margin-right: 0;
+}
+
+.emoyee-prof {
+  padding-left: 10px;
+  padding-left: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .emoyee {
-  margin-top: 30px;
-  margin-bottom: 10px;
-  min-width: 109px;
   text-align: center;
-
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -285,10 +308,7 @@ a {
 }
 
 .prof {
-  margin-top: 0;
-  margin-bottom: 30px;
   text-align: center;
-
   color: var(--prymary-text-color);
   font-size: 16px;
   line-height: 1.19;
@@ -435,12 +455,12 @@ a {
 
 .button.prymary {
   display: inline-block;
+  margin-top: 30px;
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
   text-align: center;
   border: none;
-  margin-bottom: 200px;
 
   background-color: var(--accent-text-color);
   color: var(--secondary-text-color);
